@@ -1,0 +1,9 @@
+.todo-list {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .buttons {
+    float: right;
+  }
