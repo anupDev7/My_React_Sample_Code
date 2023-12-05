@@ -1,9 +1,58 @@
 .todo-list {
-    max-width: 400px;
+    width: 100%;
     margin: auto;
     padding: 20px;
   }
   
   .buttons {
-    float: right;
+    margin: 10,10,10,10;
+  }
+
+  ul {
+    width: 90%;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  .flex-container-header {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color:  #f1f1f1;
+    border: 2px solid black;
+  }
+  .flex-container-header > span {
+    background-color: #f1f1f1;
+    /* width: 300px; */
+    margin: 0 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    border-left: 2px solid black;
+  }
+  .spanOne {
+    border: none!important;
+    width: 10%;
+  }
+  .spanTwo {
+    width: 80%;
+  }
+  .actionButton {
+    width: 10%;
+  }
+  .flex-container > span {
+    background-color: #f1f1f1;
+    /* width: 300px; */
+    margin: 0 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    border-left: 2px solid black;
+  }
+  .flex-container {
+    display: flex;
+    /* justify-content: space-between; */
+    background-color:  #f1f1f1;
+    border-bottom:  2px solid black;
+    border-right:  2px solid black;
+    border-left:  2px solid black;
   }

@@ -41,22 +41,33 @@ const ToDoListIndex = () => {
           Add
         </button>
       </div>
-      <ul className="list-group">
+      <ul>
+        <li className="flex-container-header">
+          <span className="spanOne">Sl No</span>
+          <span className="spanTwo">Description</span>
+          <span className="actionButton">Edit</span>
+          <span className="actionButton">Delete</span>
+        </li>
+      </ul>
+      <ul>
         {tasks.map((task, index) => (
-          <li key={index} className="list-group-item">
-            {task}
-            <span className="buttons">
+          <li key={index} className="flex-container">
+            <span className="spanOne">{index + 1}</span>
+            <span className="spanTwo">{task}</span>
+            <span className="actionButton">
               <button
                 className="btn btn-outline-warning"
                 onClick={() => editTask(index)}
               >
-                Edit
+                E
               </button>
+            </span>
+            <span className="actionButton">
               <button
                 className="btn btn-outline-danger"
                 onClick={() => deleteTask(index)}
               >
-                Delete
+                D
               </button>
             </span>
           </li>
